@@ -14,6 +14,8 @@ router.post('/info', sendmail.insert_info);
 
 router.get('/getmail', sendmail.get_data);
 
+router.get('/getinfo', sendmail.get_data_info);
+
 
 router.get('/', function (req, res) {
     res.send("hello");
